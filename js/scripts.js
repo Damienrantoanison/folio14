@@ -1,6 +1,8 @@
 $(document).ready(function(){
 	TweenMax.set('#loader', {className:"+=loading"});
+	
 	animHeader();
+	$('#menu').onePageNav();
 	
 	// Défini les différentes routes
 	var AppRouter = Backbone.Router.extend({
