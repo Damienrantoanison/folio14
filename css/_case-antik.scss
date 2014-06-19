@@ -1,0 +1,204 @@
+
+.antikythera{
+		background: url("../img/antikythera-cover.jpg") no-repeat top center;
+		background-size: cover;
+}
+
+.mecanism{
+	background: url("../img/antikythera-mecanism.jpg") no-repeat top center;
+	background-size: cover;
+}
+
+.share{
+	background: url("../img/antikythera-end.jpg") no-repeat top center;
+	background-size: cover;
+}
+
+
+.handly{
+		background: url("../img/handly-cover.jpg") no-repeat top center;
+		background-size: cover;
+}
+
+.simpson{
+		background: url("../img/simpson-cover.jpg") no-repeat top center;
+		background-size: cover;
+		opacity: 0.8;
+}
+
+.dreamcatcher{
+		background: url("../img/dreamcatcher-cover.jpg") no-repeat top center;
+		background-size: cover;
+		background-position-y: -40px;
+}
+
+.voice{
+	background: url("../img/dreamcatcher-voice.jpg") no-repeat top center;
+	background-size: cover;
+}
+
+.simpson button.low-opc:hover{
+	background-color: rgba(0,0,0,0.4);
+}
+
+.case-cover{
+	position: relative;
+	height: 60vh;
+	width: 100%;
+
+	span{
+		display: inline-block;
+		color: $white96;
+	}
+	.date{
+		float: left;
+		position: absolute;
+		bottom: -458px;
+	}
+	.role{
+		float: right;
+		position: absolute;
+		bottom: -458px;
+		right: 0;
+	}
+
+	.case-button{
+		background-color: transparent;
+		border: 2px solid $white96;
+		color: $white96;
+		cursor: pointer;
+		position: absolute;
+		left: 50%;
+		bottom: -431px;
+		margin-left: -136px;
+		border-radius:6px;
+		font-size: 1em;
+		font-weight: 700;
+		text-transform: uppercase;
+		line-height: 2;
+		letter-spacing: 1px;
+		outline: none;
+		padding:16px 38px;
+		-webkit-transition: all .4s ease-in-out;
+		-moz-transition: all .4s ease-in-out;
+		-ms-transition: all .4s ease-in-out;
+		-o-transition: all .4s ease-in-out;
+		transition: all .4s ease-in-out;
+
+		&:hover{ color: $white96; background-color: rgba(0,0,0,0.9);}
+	}
+
+}
+
+.case-carousel{
+	padding: 36px;
+	background-color: $white96;
+}
+
+.carousel-holder{
+	margin: 0 auto;
+	width: 802px;
+	height: 492px;
+}
+
+
+section.case-demilayout{
+	padding: 84px;
+	background-color: $white96;
+	.half-l{
+		text-align: center;
+	}
+	.half-r{
+		text-align: left;
+		margin-top: 24px;
+	}
+}
+
+section.case-study {
+	height: 40vh;
+	padding: 80px;
+	p{ max-width: 430px; }
+}
+
+
+section.case-caption{
+	background-color: #FFF;
+	padding: 80px;
+	text-align: center;
+	p{ max-width:480px;margin: 0 auto; }
+}
+
+.case-pic{
+	height: 564px;
+	width: 100%;
+	
+}
+.case-pic2{
+	height: 390px;
+	width: 440px;
+	
+}
+
+.footer-credits{
+	text-align: center;
+	background-color: #ebebeb;
+	padding:38px;
+	a:hover{ color: $purple;}
+}
+
+.footer-thanks{
+	background-color: $dark;
+	text-align: center;
+	padding: 82px;
+}
+.footer-back{
+	text-transform: uppercase;
+	font-size: 1.125em;
+	color: $light-purple;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	
+	&:hover{
+		color: $white96;
+	}
+}
+
+.case-title{
+	font-weight: 300;
+	color: $white96;
+	margin-bottom: 24px;
+}
+
+section.case-video{
+	background-color: #2980b9;
+	height: 534px;
+}
+
+a.wrap{
+	width: 960px;
+	height: 534px;
+	position: relative;
+	display: block;
+	padding: 0px;
+	margin: 0 auto;
+
+	&::after{
+		content: "";
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		background: url("../img/play.png") center center no-repeat;
+		-webkit-transition-duration: .3s;
+		-moz-transition-duration: .3s;
+		-ms-transition-duration: .3s;
+		-o-transition-duration: .3s;
+		transition-duration: .3s;
+		
+	}
+}

@@ -1,0 +1,1 @@
+var header=$("header"),headerHeight=header.height(),offset=0,lastPos=0;$(document).on("scroll",function(){var e=$(document).scrollTop(),o=e-lastPos;offset+o>headerHeight?offset=headerHeight:0>e?offset=0:offset+=o,offset=0>offset?0:offset,header.css("top",-offset+"px"),lastPos=e});

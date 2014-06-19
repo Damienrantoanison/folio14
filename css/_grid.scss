@@ -1,0 +1,59 @@
+/* Variables */
+
+$columns: 12!default;
+$gutter: 30px!default;
+$small: 320px;
+$medium: 640px;
+$large: 1024px;
+
+/* Extends */ 
+@for $i from 1 through $columns{
+	.col-#{$i}{ 
+		@extend %col;
+		width:$i / 12 * 100%; 
+	}
+}
+
+%clearfix{
+	&::before,
+	&::after {
+		content:"";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+	& {
+		zoom:1; /* For IE 6/7 (trigger has Layout) */
+	}
+}
+
+
+%col{
+	float: left;
+	position: relative;
+	min-height: 1px;
+	padding:0 $gutter*0.5;
+}
+
+
+.row {
+	max-width: 1140px;
+	margin: 0 auto;
+	@extend %clearfix;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and(min-width: $small){
+	/* Larger mobile styles (wider than 320 pixels) */
+}
+
+@media only screen and(min-width: $medium){
+	/* Larger mobile styles (wider than 600 pixels) */
+}
+
+@media only screen and(min-width: $large){
+	/* Larger mobile styles (wider than 1024 pixels) */
+}
+

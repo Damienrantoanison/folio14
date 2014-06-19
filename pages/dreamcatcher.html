@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns="http://wwww.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+	<head>
+	  <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	  <title>Portfolio - Dreamcatcher</title>
+	  <link rel="icon" type="iamge/png" href="../favicon.ico">
+	  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+	  <link rel="stylesheet" href="../css/mfglabs_iconset.css">
+	  <!--<link rel="stylesheet" href="http://basehold.it/28/0/0/0/0.2">-->
+	  <link rel="stylesheet" href="../css/style.css">
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="row">
+				<div class="col-12">
+					<a href="#home" class="header-logo"><img src="../svg/logo.svg"></a>
+					<nav>
+						<ul id="menu">
+							<li class="current menu-item"><a href="#home">Home</a></li>
+							<li class="menu-item"><a href="#works">Works</a></li>
+							<li class="menu-item"><a href="#about">About me</a></li>
+							<li class="menu-item"><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>  
+
+
+		<div class="case-cover dreamcatcher"> 
+			<div class="row">
+				<div class="col-12">
+					<span class="date">October 2013</span> 
+					<button class="case-button"><a href="http://anthonyroux.com/dreamcatcher/" target="_blank">Visit the website</a></button>
+					<span class="role">Role : Front-developer</span>
+				</div>
+			</div>
+		</div>
+
+		<section class="case-study">
+			<div class="row">
+				<div class="col-6">
+					<h2>Dreamcatcher</h2>
+					<p>During two weeks centered on the WordPress development we had to create a VDM like. We think about creating a plateform where everyone can come and post his dream.</p>
+				</div>
+				<div class="col-6">
+					<h2>My role</h2>
+					<p>On this project I was involved in developing the template for the single view of a dream posted.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="case-carousel">
+			<div class="row">
+				<div class="col-12">
+					<div id="carousel" class="carousel-holder">
+						<img src="../img/dreamcatcher-1.png" alt="dreamcatcher feed" class="slide">
+						<img src="../img/dreamcatcher-2.png" alt="dreamcatcher single view" class="slide">
+						<img src="../img/dreamcatcher-3.png" alt="dreamcatcher post" class="slide">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="case-caption">
+			<div class="row">
+				<div class="col-12">
+					<h2>Post your weirdest dream</h2>
+					<p>Your dream last night was really weird. Post it in one of the eight categories and see if users think it's a dream or a nightmare. Maybe your dream will rise in the top best dreams or nightmares.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="case-pic voice"></section>
+		<section class="case-caption">
+			<h2>Record your dreams orally</h2>
+			<p>Thanks to an awesome plugin we have obtained a phone number that people can call and record their dreams orally. Then we can listen the recorded audio track.</p>
+		</section>
+		
+		<div class="footer-credits">
+			<strong>Credits to</strong><br/>
+			<a href="http://laureboutmy.com/" target="_blank">Laure Boutmy</a>, <a href="http://julienperriere.com/" target="_blank">Julien Perrière</a>, <a href="https://www.facebook.com/anthonyroux/" target="_blank">Anthony Roux</a>, <a href="http://fr.linkedin.com/in/audreychauprade" target="_blank">Audrey Chauprade</a> and <a href="http://fr.linkedin.com/pub/margot-bottet/63/266/5a2" target="_blank"> Margot Bottet</a>
+		</div>
+
+		<div class="footer-thanks">
+			<h1 class="case-title">Thanks for reading</h1>
+			<a href="../index.html" class="footer-back">back to works</a>
+		</div>
+
+	</body>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="../js/animated-header.js"></script>
+	<script src="../js/jquery.scrollTo.js"></script>
+	<script src="../js/jquery.nav.js"></script>
+	<script src="../js/jquery.roundabout.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#menu').onePageNav();
+			$('#carousel').roundabout({
+				childSelector:"img", 
+				minOpacity:0.6,
+				autoplay:false
+			});
+		});
+	</script>
+</html>

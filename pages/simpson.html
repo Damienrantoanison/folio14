@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns="http://wwww.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+	<head>
+	  <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	  <title>Portfolio - Simpson Museum</title>
+	  <link rel="icon" type="image/png" href="../favicon.ico">
+	  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+	  <link rel="stylesheet" href="../css/mfglabs_iconset.css">
+	  <!--<link rel="stylesheet" href="http://basehold.it/28/0/0/0/0.2">-->
+	  <link rel="stylesheet" href="../css/style.css">
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="row">
+				<div class="col-12">
+					<a href="#home" class="header-logo"><img src="../svg/logo.svg"></a>
+					<nav>
+						<ul id="menu">
+							<li class="current menu-item"><a href="#home">Home</a></li>
+							<li class="menu-item"><a href="#works">Works</a></li>
+							<li class="menu-item"><a href="#about">About me</a></li>
+							<li class="menu-item"><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>  
+
+
+		<div class="case-cover simpson"> 
+			<div class="row">
+				<div class="col-12">
+					<span class="date">May 2014</span> 
+					<button class="case-button low-opc"><a href="http://simpsonsmuseum.com" target="_blank">Visit the website</a></button>
+					<span class="role">Role : Webdesign & Illustrator</span>
+				</div>
+			</div>
+		</div>
+
+		<section class="case-study">
+			<div class="row">
+				<div class="col-6">
+					<h2>Simpson Museum</h2>
+					<p>From the brief we had to think a web solution according to a specific topic . Our topic was Masterpiece and we decided to tell the story of an old mecanism made by Archimède in -87 BC.</p>
+				</div>
+				<div class="col-6">
+					<h2>My role</h2>
+					<p>On this project I worked on the UI / UX design. I wanted to create an immersive experience in fullscreen with a simple naviguation and a minimalist User Interface.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="case-carousel">
+			<div class="row">
+				<div class="col-12">
+					<div id="carousel" class="carousel-holder">
+						<img src="../img/simpson-1.png" alt="" class="slide">
+						<img src="../img/simpson-2.png" alt="" class="slide">
+						<img src="../img/simpson-3.png" alt="" class="slide">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="case-caption">
+			<div class="row">
+				<div class="col-12">
+					<h2></h2>
+					<p>We separated the data obtained in 3 sections, the first part is about the ratings and viewers, the second on the characters and a last part on recurring funny facts in simpson serie.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="case-pic2"></section>
+		<section class="case-caption">
+			<h2>Characters Illustrations</h2>
+			<p>To better understand the mechanism we wanted to have a part of the website dedicated to it. In this section you can see the whole mecanism animated with each gear rotating. </p>
+		</section>
+		
+		<div class="footer-credits">
+			<strong>Credits to</strong><br/>
+			<a href="http://robinpayot.com/" target="_blank">Robin Payot</a>, <a href="http://www.em-misson.fr/" target="_blank">Emmanuelle Misson</a>, <a href="http://marionlivet.com/" target="_blank">Marion Livet</a>, <a href="http://www.martindebray.com/" target="_blank">Martin Debray</a> and <a href="http://damienlecolinet.com/" target="_blank">Damien Lecolinet</a>
+		</div>
+
+		<div class="footer-thanks">
+			<h1 class="case-title">Thanks for reading</h1>
+			<a href="../index.html" class="footer-back">back to works</a>
+		</div>
+
+	</body>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="../js/animated-header.js"></script>
+	<script src="../js/jquery.scrollTo.js"></script>
+	<script src="../js/jquery.nav.js"></script>
+	<script src="../js/jquery.roundabout.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#menu').onePageNav();
+			$('#carousel').roundabout({
+				childSelector:"img", 
+				minOpacity:0.6,
+				autoplay:false
+			});
+		});
+	</script>
+</html>

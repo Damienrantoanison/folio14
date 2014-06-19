@@ -1,0 +1,95 @@
+
+$thumb-width: ( $w-thumb*100% ) / $row; 
+$thumb-mr: ( $gut*100% ) / $row; 
+
+
+
+.works{
+	background-color: $white96;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	padding-bottom: 76px;
+	border-bottom: 4px solid #D6D6D6;
+}
+
+.thumbs{
+	position: relative;
+	padding:0px;
+	overflow: hidden;
+	margin: 0 $thumb-mr*2;
+	color: $grey;
+	max-width: 1140px;
+
+	li{
+		float: left;
+		width: 420px; 
+		margin-top: $baseline;
+		margin: 28px 23.5px;
+		border-radius: 6px;
+
+		.thumb-pic{
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			position: relative;
+			cursor: pointer;
+			.mask{
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				overflow: hidden;
+				top: 0;
+				left: 0;
+				border-radius: 5px;
+
+			}
+			.view-first img{
+				-webkit-transition: all 0.2s linear;
+				-moz-transition: all 0.2s linear;
+				-ms-transition: all 0.2s linear;
+				-o-transition: all 0.2s linear;
+				transition: all 0.2s linear;
+				
+			}
+			.view-first .mask{
+				opacity: 0;
+				background-color: $purple;
+				-webkit-transition: all 0.4s ease-in-out;
+				-moz-transition: all 0.4s ease-in-out;
+				-ms-transition: all 0.4s ease-in-out;
+				-o-transition: all 0.4s ease-in-out;
+				transition: all 0.4s ease-in-out;
+				
+			}
+
+			.view-first:hover .mask{
+				opacity: 0.85;
+			}
+
+			a{
+				-webkit-transition: all .5s ease-in-out;
+				-moz-transition: all .5s ease-in-out;
+				-ms-transition: all .5s ease-in-out;
+				-o-transition: all .5s ease-in-out;
+				transition: all .5s ease-in-out;
+				
+			}
+			a:hover{
+				opacity: 0.3;
+			}
+			img{
+				width: 100%;
+				display: block;
+				position: relative;
+				border-radius: 5px;
+			}
+		}
+		.thumb-caption{ margin-top: 7px; h3{ color: $primary; }}
+	}
+
+	&:after{
+		@include clearfix
+	}
+
+}

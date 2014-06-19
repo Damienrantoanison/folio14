@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns="http://wwww.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+	<head>
+	  <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	  <title>Portfolio - Handly</title>
+	  <link rel="icon" type="iamge/png" href="../favicon.ico">
+	  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+	  <link rel="stylesheet" href="../css/mfglabs_iconset.css">
+	  <!--<link rel="stylesheet" href="http://basehold.it/28/0/0/0/0.2">-->
+	  <link rel="stylesheet" href="../css/style.css">
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="row">
+				<div class="col-12">
+					<a href="#home" class="header-logo"><img src="../svg/logo.svg"></a>
+					<nav>
+						<ul id="menu">
+							<li class="current menu-item"><a href="#home">Home</a></li>
+							<li class="menu-item"><a href="#works">Works</a></li>
+							<li class="menu-item"><a href="#about">About me</a></li>
+							<li class="menu-item"><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>  
+
+
+		<div class="case-cover handly">
+			<div class="row">
+				<div class="col-12">
+					<span class="date">Mars 2014</span> 
+					<span class="role">Role : Webdesign & Motion Design</span>
+				</div>
+			</div>
+		</div>
+
+		<section class="case-study">
+			<div class="row">
+				<div class="col-6">
+					<h2>Handly</h2>
+					<p>Handly is a concept design it has not been subsequently developed. The idea was to create an application that can bring people together and they can exchange expertise.</p>
+				</div>
+				<div class="col-6">
+					<h2>My role</h2>
+					<p>I worked on webdesign, the logo, some icons and a motion design. I wanted to create a simple service, friendly and intuitive that can be adapted to many users.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="case-carousel">
+			<div class="row">
+				<div class="col-12">
+					<div id="carousel" class="carousel-holder">
+						<img src="../img/handly-1.png" alt="" class="slide">
+						<img src="../img/handly-2.png" alt="" class="slide">
+						<img src="../img/handly-3.png" alt="" class="slide">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="case-caption">
+			<div class="row">
+				<div class="col-12">
+					<h2>Share your skills</h2>
+					<p>Find the right person who can help you through the area of ​​expertise. 
+			   		   Send a request if you want to find an arrangement with that person. If your 
+			   		   request is accepted it's time to get in touch with her.</p>
+				</div>
+			</div>
+		</section>
+		
+		<section class="case-demilayout">
+			<div class="row">
+				<div class="col-6 half-l"><img src="../img/handly-logo.png" alt=""></div>
+				<div class="col-6 half-r">
+					<h2>The Logo</h2>
+					<p>I first draw various ideas and concepts on my sketchbook and then i go to the vector. I try to use simple shapes to make a hand and grid the logo to make it more consistent and recognizable.</p>
+				</div>
+			</div>
+		</section>
+
+		
+		<section class="case-pic2">
+			<img src="../img/handly-icons.jpg">
+		</section>
+		<section class="case-caption">
+			<h2>The Icons</h2>
+			<p>I also made several icons for this project and each represents the area of expertise.</p>
+		</section>
+		
+		<section class="case-video">
+			<div class="row">
+				<div class="col-12">
+					<a href="https://www.youtube.com/watch?v=oza-eoFIbRo&feature=youtu.be" class="wrap">
+						<img src="../img/handly-video.jpg">
+					</a>
+				</div>
+			</div>
+			
+		</section>
+
+		<section class="case-caption">
+			<h2>Motion Design</h2>
+			<p>During a week focused on motion design we had to design a motion of fifteen seconds explaining one of our project. I choose to do mine on Handly and simply explain the purpose of the app.</p>
+		</section>
+
+
+		<div class="footer-thanks">
+			<h1 class="case-title">Thanks for reading</h1>
+			<a href="../index.html" class="footer-back">back to works</a>
+		</div>
+
+	</body>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="../js/animated-header.js"></script>
+	<script src="../js/jquery.scrollTo.js"></script>
+	<script src="../js/jquery.nav.js"></script>
+	<script src="../js/jquery.roundabout.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#menu').onePageNav();
+			$('#carousel').roundabout({
+				childSelector:"img", 
+				minOpacity:0.6,
+				autoplay:false
+			});
+		});
+	</script>
+</html>

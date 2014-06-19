@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns="http://wwww.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+	<head>
+	  <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	  <title>Portfolio - Antikythera</title>
+	  <link rel="icon" type="iamge/png" href="../favicon.ico">
+	  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+	  <link rel="stylesheet" href="../css/mfglabs_iconset.css">
+	  <!--<link rel="stylesheet" href="http://basehold.it/28/0/0/0/0.2">-->
+	  <link rel="stylesheet" href="../css/style.css">
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="row">
+				<div class="col-12">
+					<a href="#home" class="header-logo"><img src="../svg/logo.svg"></a>
+					<nav>
+						<ul id="menu">
+							<li class="current menu-item"><a href="#home">Home</a></li>
+							<li class="menu-item"><a href="#works">Works</a></li>
+							<li class="menu-item"><a href="#about">About me</a></li>
+							<li class="menu-item"><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>  
+
+
+		<div class="case-cover antikythera"> 
+			<div class="row">
+				<div class="col-12">
+					<span class="date">December 2013</span> 
+					<button class="case-button"><a href="http://antikythera.fr/" target="_blank">Visit the website</a></button>
+					<span class="role">Role : UX & UI Design</span>
+				</div>
+			</div>
+		</div>
+
+		<section class="case-study">
+			<div class="row">
+				<div class="col-6">
+					<h2>Antikythera</h2>
+					<p>From the brief we had to think a web solution according to a specific topic . Our topic was Masterpiece and we decided to tell the story of an old mecanism made by Archimède in -87 BC.</p>
+				</div>
+				<div class="col-6">
+					<h2>My role</h2>
+					<p>On this project I worked on the UI / UX design. I wanted to create an immersive experience in fullscreen with a simple naviguation and a minimalist User Interface.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="case-carousel">
+			<div class="row">
+				<div class="col-12">
+					<div id="carousel" class="carousel-holder">
+						<img src="../img/antikythera-1.png" alt="" class="slide">
+						<img src="../img/antikythera-2.png" alt="" class="slide">
+						<img src="../img/antikythera-3.png" alt="" class="slide">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="case-caption">
+			<div class="row">
+				<div class="col-12">
+					<h2>Immerse yourself into the story</h2>
+					<p>To create a true experience we incorporate visual and sonor effects. Thanks to the timeline you can navigate between each section and trace the story of this unique and misunderstood object in this time.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="case-pic mecanism"></section>
+		<section class="case-caption">
+			<h2>See the mecanism</h2>
+			<p>To better understand the mechanism we wanted to have a part of the website dedicated to it. In this section you can see the whole mecanism animated with each gear rotating. </p>
+		</section>
+		<section class="case-pic share"></section>
+
+		<section class="case-caption">
+
+			<h2>Share what you've learned</h2>
+			<p>Once your trips ends share your experience on the social networks for other people learn more about it . Even today we can’t measure the impact of this piece if it hadn’t been lost.</p>
+		</section>
+		
+		<div class="footer-credits">
+			<strong>Credits to</strong><br/>
+			<a href="http://www.antoinevidal.fr/" target="_blank">Antoine Vidal</a>, <a href="http://www.doriancamilleri.fr/" target="_blank">Dorian Camilleri</a>, <a href="http://fr.linkedin.com/pub/dany-graells/87/924/109" target="_blank">Dany Graells</a>, <a href="http://www.douglasandres.com/" target="_blank">Douglas Andrès</a> and <a href="http://menutmathieu.fr/" target="_blank">Mathieu Menut</a>
+		</div>
+
+		<div class="footer-thanks">
+			<h1 class="case-title">Thanks for reading</h1>
+			<a href="../index.html" class="footer-back">back to works</a>
+		</div>
+
+	</body>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="../js/animated-header.js"></script>
+	<script src="../js/jquery.scrollTo.js"></script>
+	<script src="../js/jquery.nav.js"></script>
+	<script src="../js/jquery.roundabout.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#menu').onePageNav();
+			$('#carousel').roundabout({
+				childSelector:"img", 
+				minOpacity:0.6,
+				autoplay:false
+			});
+		});
+	</script>
+</html>
