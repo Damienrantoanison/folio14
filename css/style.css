@@ -258,6 +258,23 @@ hr {
     color: whitesmoke;
     background-color: #6967aa; }
 
+/* line 1, _loader.scss */
+#loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background: #2e2f43;
+  display: none;
+  opacity: 0; }
+
+/* line 9, _loader.scss */
+#loader.loading {
+  opacity: 1;
+  display: block; }
+
 /* line 2, _header.scss */
 header {
   background-color: #282834;
@@ -838,7 +855,7 @@ footer {
         .bottom-footer ul li i:hover {
           color: whitesmoke; }
 
-/* line 16, style.scss */
+/* line 17, style.scss */
 *,
 *:before,
 *:after {

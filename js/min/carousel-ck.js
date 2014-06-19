@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#carousel").roundabout({childSelector:"img",minOpacity:.6,autoplay:!1})});
